@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Screen Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <textarea  id="textarea" placeholder="Start Typing Here..."></textarea>
+    <textarea  id="textarea2" placeholder="Press Enter to see your text here..."></textarea>
+    <div id="keyboard">
+<!-- <div id="container"> -->
+
+    <!-- ROW -1  -->
+    <div class="row">
+
+        <!-- <button class="btn">
+            <span class="secondary">ESC</span>
+        </button> -->
+        <button class="btn">
+            <span class="primary">~</span>
+            <span class="secondary-number">`</span>
+        </button>
+        <button class="btn">
+            <span class="primary">!</span>
+            <span class="secondary-number">1</span>
+        </button>
+        <button class="btn">
+            <span class="primary">@</span>
+            <span class="secondary-number">2</span>
+        </button>
+        <button class="btn">
+             <span class="primary">#</span>
+            <span class="secondary-number">3</span>
+        </button>
+        <button class="btn">
+             <span class="primary">$</span>
+            <span class="secondary-number">4</span>
+        </button>
+        <button class="btn">
+             <span class="primary">%</span>
+            <span class="secondary-number">5</span>
+        </button>
+        <button class="btn">
+             <span class="primary">^</span>
+            <span class="secondary-number">6</span>
+        </button>
+        <button class="btn">
+             <span class="primary">&</span>
+            <span class="secondary-number">7</span>
+        </button>
+        <button class="btn">
+             <span class="primary">*</span>
+            <span class="secondary-number">8</span>
+        </button>
+        <button class="btn">
+             <span class="primary">(</span>
+            <span class="secondary-number">9</span>
+        </button>
+        <button class="btn">
+             <span class="primary">)</span>
+            <span class="secondary-number">0</span>
+        </button>
+        <button class="btn">
+             <span class="primary">_</span>
+            <span class="secondary">-</span>
+        </button>
+        <button class="btn">
+             <span class="primary">+</span>
+            <span class="secondary">=</span>
+        </button>
+        <button id="backspace">backspace</button>
+    </div>
+
+    <!-- ROW - 2  -->
+
+    <div class="row">
+        <button id="tab">
+           <span class="secondary">Tab</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">q</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">w</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">e</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">r</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">t</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">y</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">u</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">i</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">o</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">p</span>
+       </button>
+        <button class="btn">
+            <span class="primary">{</span>
+           <span class="secondary">[</span>
+       </button>
+        <button class="btn">
+            <span class="primary">}</span>
+           <span class="secondary">]</span>
+       </button>
+        <button class="btn">
+            <span class="primary">|</span>
+           <span class="secondary">\</span>
+       </button>
+           
+    </div>
+
+    <!-- ROW - 3  -->
+
+    <div class="row"> 
+        <button id="capslock">
+           <span class="secondary">Caps</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">a</span>
+       </button>
+       <button class="btn">
+       <span class="secondary">s</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">d</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">f</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">g</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">h</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">j</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">k</span>
+   </button>
+       <button class="btn">
+       <span class="secondary">l</span>
+   </button>
+       <button class="btn">
+        <span class="primary">:</span>
+       <span class="secondary">;</span>
+   </button>
+       <button class="btn">
+        <span class="primary">"</span>
+       <span class="secondary">'</span>
+   </button>
+       <button id="enter">
+       <span class="secondary">Enter</span>
+   </button>
+       
+    </div>
+
+<!-- ROW- 4 -->
+    <div class="row">
+        <button class="shift">
+            <span class="secondary">shift</span>
+        </button>
+        <button class="btn">
+           <span class="secondary">z</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">x</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">c</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">v</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">b</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">n</span>
+       </button>
+        <button class="btn">
+           <span class="secondary">m</span>
+       </button>
+        <button class="btn">
+            <span class="primary"><</span>
+           <span class="secondary">,</span>
+       </button>
+        <button class="btn">
+            <span class="primary">></span>
+           <span class="secondary">.</span>
+       </button>
+        <button class="btn">
+            <span class="primary">?</span>
+           <span class="secondary">/</span>
+       </button>
+       <button id="up">
+        <span class="secondary">⋀</span>
+    </button>
+        <button class="shift">
+           <span class="secondary">shift</span>
+       </button>
+        <button id="del">
+           <span class="secondary">Del</span>
+       </button>
+    </div>
+
+    <!-- ROW - 4 -->
+    <div class="row">
+        <button id="fn">
+            <span class="secondary">Fn</span>
+        </button>
+        <button id="ctrl">
+            <span class="secondary">Ctrl</span>
+        </button>
+        <button id="del">
+            <span class="secondary">🪟</span>
+        </button>
+        <button id="alt">
+            <span class="secondary">alt</span>
+        </button>
+        <button id="space" style="padding-right: 300px; ">
+            <span class="secondary"></span>
+        </button>
+        <button id="alt">
+            <span class="secondary">alt</span>
+        </button>
+        <button id="ctrl">
+            <span class="secondary">Ctrl</span>
+        </button>
+        <button id="up">
+            <span class="secondary">⫷</span>
+        </button>
+        <button id="down">
+            <span class="secondary">⋁</span>
+        </button>
+        <button id="left">
+            <span class="secondary">⫸</span>
+        </button>
+        
+        <button id="num">
+            <span class="secondary">num</span>
+        </button>
+        
+    <!-- </div> -->
+</div>
+    </div>
+
+<!-- Attaching the javascript -->
+<script src="script.js"></script>
+
+</body>
+</html>

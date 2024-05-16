@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* textarea */
+#textarea {
+    height:200px;
+    width: 1300px;;
+    margin-top:30px;
+    margin-left:40px;
+}
+
+#textarea2{
+  height:50px;
+  width:1000px;
+  margin-left:14%;
+}
+/* keyboard */
+#keyboard{
+    height:250px;
+    width:1100px;
+    border:2px solid black;
+    position: absolute;
+    top:50%;
+    left:10%;
+    
+}
+/* inside the div */
+/* creating the rows */
+#container{
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    background: black;
+
+}
+.row {
+    /* Optionally, you can add other styling to your rows */
+    display: flex;
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+  }
+
+  /* creating the columns */
+  button{
+    display: inline-block   ;
+    flex : 1;
+    padding:10px;
+    border : 1px solid white;
+    position:relative;
+    background-color: black;
+    color:white;
+
+  }
+  button:hover{
+    background-color:white;
+    color:black;
+    cursor: pointer;
+  }
+  .primary{
+    font-size:10px;
+    position:absolute;
+    top:1px; 
+    bottom:0;
+    
+  }
+  .secondary{
+   font-size:23px;
+   
+  }
+
+  .upper { text-transform: uppercase; }
